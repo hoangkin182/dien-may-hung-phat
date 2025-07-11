@@ -1,0 +1,91 @@
+/* Auto Slider Styles */
+
+.slider-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 600px;
+    width: 300%;
+}
+
+.slide {
+    min-width: 33.333%;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.slider-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: white;
+}
+
+.dot:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Responsive Slider */
+@media (max-width: 768px) {
+    .slider {
+        height: 300px;
+    }
+
+    .slider-dots {
+        bottom: 15px;
+    }
+
+    .dot {
+        width: 10px;
+        height: 10px;
+    }
+
+    .slider-dots {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .slider {
+        height: 200px;
+    }
+
+    .slider-dots {
+        bottom: 10px;
+    }
+
+    .dot {
+        width: 8px;
+        height: 8px;
+    }
+}

@@ -1,0 +1,108 @@
+/* Responsive Design - General */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1000px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 900px;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .intro-text {
+        font-size: 1.1rem;
+        line-height: 1.7;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 10px;
+    }
+
+
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+    }
+
+    .intro-text {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .footer {
+        padding: 15px 0;
+        font-size: 0.9rem;
+    }
+}
+
+/* Main Content Responsive */
+.main-content {
+    min-height: calc(100vh - 200px);
+}
+
+/* Ensure proper spacing on mobile */
+@media (max-width: 768px) {
+
+    .introduction-section,
+    .products-section,
+    .policy-section,
+    .customers-section,
+    .contact-section {
+        margin: 15px 0;
+    }
+}
+
+/* Touch-friendly interactions for mobile */
+@media (max-width: 768px) {
+
+    .nav-btn,
+    .dot,
+    .submit-btn {
+        min-height: 44px;
+        min-width: 44px;
+    }
+
+    .product-item {
+        cursor: pointer;
+    }
+}
+
+/* Print styles */
+@media print {
+
+    .header,
+    .nav-btn,
+    .slider-dots,
+    .submit-btn {
+        display: none !important;
+    }
+
+    body {
+        background-color: white !important;
+        color: black !important;
+    }
+
+    .main-content {
+        min-height: auto;
+    }
+}
