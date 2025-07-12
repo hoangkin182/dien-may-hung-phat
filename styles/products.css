@@ -42,8 +42,7 @@
 
 .product-item img {
     width: 100%;
-    height: auto;
-    aspect-ratio: 4/3;
+    height: 220px;
     object-fit: cover;
     display: block;
     background: #ffe066;
@@ -109,7 +108,7 @@
     }
 
     .product-item img {
-        height: 130px;
+        height: 180px;
     }
 }
 
@@ -134,10 +133,7 @@
     }
 
     .product-item img {
-        height: auto;
-        aspect-ratio: 4/3;
-        max-height: 180px;
-        min-height: 120px;
+        height: 140px;
     }
 
     .product-item h3 {
@@ -181,10 +177,7 @@
     }
 
     .product-item img {
-        height: auto;
-        aspect-ratio: 4/3;
-        max-height: 140px;
-        min-height: 90px;
+        height: 120px;
     }
 
     .product-item h3 {

@@ -24,40 +24,18 @@
 
 .slide img {
     width: 100%;
-    height: auto;
-    aspect-ratio: 16/9;
+    height: 360px;
     object-fit: cover;
     display: block;
     background: #ffe066;
 }
 
-.slider-dots {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 10px;
+@media (max-width: 1024px) {
+    .slide img {
+        height: 280px;
+    }
 }
 
-.dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.5);
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.dot.active {
-    background-color: white;
-}
-
-.dot:hover {
-    background-color: rgba(255, 255, 255, 0.8);
-}
-
-/* Responsive Slider */
 @media (max-width: 768px) {
     .slider {
         height: auto !important;
@@ -65,7 +43,7 @@
     }
 
     .slide img {
-        height: auto;
+        height: 200px;
         aspect-ratio: 16/9;
         max-height: 320px;
         min-height: 180px;
@@ -92,7 +70,7 @@
     }
 
     .slide img {
-        height: auto;
+        height: 140px;
         aspect-ratio: 16/9;
         max-height: 220px;
         min-height: 120px;
