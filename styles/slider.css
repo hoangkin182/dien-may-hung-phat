@@ -45,9 +45,7 @@
     }
 }
 @media (max-width: 480px) {
-    .slider-container {
-        border-radius: 6px;
-    }
+    
     .slide img {
         height: 240px; /* tăng từ 120px lên 240px */
     }
