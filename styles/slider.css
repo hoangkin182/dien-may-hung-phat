@@ -60,13 +60,15 @@
 /* Responsive Slider */
 @media (max-width: 768px) {
     .slider {
-        height: auto;
+        height: auto !important;
+        min-height: 220px;
     }
 
     .slide img {
         height: auto;
         aspect-ratio: 16/9;
-        max-height: 320px; /* tăng gấp đôi từ 160px lên 320px */
+        max-height: 320px;
+        min-height: 180px;
     }
 
     .slider-dots {
@@ -85,14 +87,15 @@
 
 @media (max-width: 480px) {
     .slider {
-        height: auto;
+        height: auto !important;
+        min-height: 180px;
     }
 
     .slide img {
         height: auto;
         aspect-ratio: 16/9;
-        max-height: 300px; /* tăng lên cho vừa mắt hơn */
-        min-height: 140px; /* đảm bảo không quá nhỏ */
+        max-height: 220px;
+        min-height: 120px;
     }
 
     .slider-dots {
