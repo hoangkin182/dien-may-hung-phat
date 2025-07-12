@@ -24,7 +24,8 @@
 
 .slide img {
     width: 100%;
-    height: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
     object-fit: cover;
     display: block;
     background: #ffe066;
@@ -59,11 +60,13 @@
 /* Responsive Slider */
 @media (max-width: 768px) {
     .slider {
-        height: 220px;
+        height: auto;
     }
 
     .slide img {
-        height: 220px;
+        height: auto;
+        aspect-ratio: 16/9;
+        max-height: 320px; /* tăng gấp đôi từ 160px lên 320px */
     }
 
     .slider-dots {
@@ -82,11 +85,13 @@
 
 @media (max-width: 480px) {
     .slider {
-        height: 200px;
+        height: auto;
     }
 
     .slide img {
-        height: 200px;
+        height: auto;
+        aspect-ratio: 16/9;
+        max-height: 220px; /* tăng gấp đôi từ 110px lên 220px */
     }
 
     .slider-dots {
