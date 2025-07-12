@@ -263,3 +263,66 @@ body {
         display: block;
     }
 }
+/* ...existing code... */
+.categories-section {
+  margin: 32px 0;
+}
+.categories-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+.category-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 18px 12px;
+  text-align: center;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #222;
+  transition: box-shadow 0.2s;
+}
+.category-card i {
+  font-size: 2rem;
+  margin-bottom: 8px;
+  color: #007bff;
+}
+.category-card span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.category-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+}
+
+@media (max-width: 600px) {
+  .categories-grid {
+    gap: 10px;
+  }
+  .category-card {
+    width: 45vw;
+    padding: 14px 6px;
+    font-size: 0.95rem;
+  }
+}
+/* ...existing code... */
+.category-card img.category-img {
+  width: 72px;
+  height: 140px;
+  object-fit: contain;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  background: #f7f7f7;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+}
+@media (max-width: 600px) {
+  .category-card img.category-img {
+    width: 44px;
+    height: 44px;
+  }
+}
