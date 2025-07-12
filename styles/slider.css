@@ -91,7 +91,8 @@
     .slide img {
         height: auto;
         aspect-ratio: 16/9;
-        max-height: 220px; /* tăng gấp đôi từ 110px lên 220px */
+        max-height: 300px; /* tăng lên cho vừa mắt hơn */
+        min-height: 140px; /* đảm bảo không quá nhỏ */
     }
 
     .slider-dots {

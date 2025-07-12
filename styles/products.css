@@ -182,7 +182,8 @@
     .product-item img {
         height: auto;
         aspect-ratio: 4/3;
-        max-height: 120px; /* tăng gấp đôi từ 60px lên 120px */
+        max-height: 180px; /* tăng lên cho vừa mắt hơn */
+        min-height: 100px; /* đảm bảo không quá nhỏ */
     }
 
     .product-item h3 {
