@@ -1,0 +1,57 @@
+.slider-section {
+    margin-bottom: 20px;
+}
+.slider-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    background: #fff;
+}
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+.slide {
+    min-width: 100%;
+    transition: opacity 0.5s;
+    position: relative;
+}
+.slide img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+.slider-dots {
+    position: absolute;
+    left: 50%;
+    bottom: 18px;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+@media (max-width: 1024px) {
+    .slide img {
+        height: 520px; /* tăng từ 260px lên 520px */
+    }
+}
+@media (max-width: 768px) {
+    .slide img {
+        height: 360px; /* tăng từ 180px lên 360px */
+    }
+}
+@media (max-width: 480px) {
+    .slider-container {
+        border-radius: 6px;
+    }
+    .slide img {
+        height: 240px; /* tăng từ 120px lên 240px */
+    }
+    .slider-dots {
+        bottom: 8px;
+    }
+}
