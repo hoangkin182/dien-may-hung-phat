@@ -48,6 +48,10 @@
     color: #4285f4;
 }
 
+.social-card:nth-child(5) i {
+    color: #0068ff;
+}
+
 .social-card h4 {
     margin-bottom: 0.5rem;
     color: #333;
